@@ -1,0 +1,33 @@
+body {
+    background: url('../img/bg.png') no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.card {
+    background-color: rgba(0, 0, 255, 0.15);
+    color: #fff;
+    padding: 20px;
+}
+
+.main {
+    padding: 150px 0;
+}
+
+.model {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.model img {
+    width: 300px;
+    margin: 0 20px;
+}

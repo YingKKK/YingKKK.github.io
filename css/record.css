@@ -1,0 +1,72 @@
+body {
+    background: url('../img/bg.png') no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.card {
+    background-color: rgba(0, 0, 255, 0.15);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    padding: 150px 0;
+}
+
+.model {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.model img {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.model2 {
+    display: none;
+    width: 1200px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.15);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-indent: 2em;
+}
+
+.model2.active {
+    display: block;
+}
+
+.model3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.model3 .card {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 20px;
+    flex: 1;
+}
+
+.model3 img {
+    width: 400px;
+}

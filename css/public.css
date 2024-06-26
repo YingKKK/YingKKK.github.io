@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: '站酷快乐体';
+    src: url('../fonts/站酷快乐体.ttf');
+}
+
+@font-face {
+    font-family: '字制区喜脉体';
+    src: url('../fonts/字制区喜脉体.ttf');
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    z-index: 999;
+    transform: translateX(-50%);
+    width: 1200px;
+    font-family: '站酷快乐体';
+}
+
+.card{
+    font-family: '字制区喜脉体';
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    display: block;
+    background: #fff;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span,
+.ribbon a.active span {
+    background: #FFD204;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="./css/public.css">
+    <title>睡眠健康状况前言速览</title>
+    <style type="text/css"></style>
+</head>
+
+<body>
+
+    <body>
+        <div class="ribbon">
+            <a href='./index.html' class="active"><span>睡眠健康状况前言速览</span></a>
+            <a href='./log.html'><span>“小南”的睡前养生日志</span></a>
+            <a href='./record.html'><span>“小南”的夜间睡眠记录</span></a>
+            <a href='./way.html'><span>“小南”的睡醒补救方式</span></a>
+            <a href='./summary.html'><span>小结</span></a>
+        </div>
+        <div class="home">
+            <div class="content">
+                <div class="stars"></div>
+                <img class="bgc" src="img/index/1.gif" width="100%" alt="">
+                <img src="img/index/1-2.png" class="overlay-image top-left" alt="">
+                <img src="img/index/1-3.png" class="overlay-image top-right" alt="">
+                <img src="img/index/1-5.png" class="overlay-image center" alt="">
+                <img src="img/index/1-4.png" class="overlay-image bottom-center" id="scrollToBottom" alt="">
+            </div>
+            <div class="main">
+                <div class="w">
+                    <div class="introduce">
+                        <div class="introduce_item">
+                            <span class="introduce_item_titles">健康现状数据 <br>
+                                “睡个好觉”⼀直是国⼈的美好祝福与愿望，但据《国⺠睡眠健康报告》（以下简称“报告”）显示，国
+                                ⺠睡眠时⻓在过去⼗年⾥缩短了1.44⼩时。在我们收集的问卷中显示37%的⼈认为⼼理压⼒是影响睡眠
+                                质量的主要因素。
+                                我们根据艾媒数据中⼼提供的数据绘制出中国国⺠失眠⼈群画像，可以看出，中国国⺠失眠群体主
+                                要为经济发达城市的中⻘年，且相对收⼊与学历较⾼，这类⼈群通常是家庭与⼯作的⻣⼲⼒量，因⽽⾯
+                                临着来⾃学业、⼯作、家庭等多⽅⾯压⼒，紧绷的精神状态不利于⼊睡。</span>
+                            <div>
+                                <img src="./img/index/2.jpg" alt="">
+                                <img src="./img/index/3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="bottom"></a>
+        </div>
+        <script>
+        document.getElementById("scrollToBottom").addEventListener("click", function() {
+            document.getElementById("bottom").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+
+    </body>
+
+</html>

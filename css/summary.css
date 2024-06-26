@@ -1,0 +1,59 @@
+body {
+    background: url('../img/summary/bg.gif') no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    color: #fff;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 20px;
+}
+
+.main {
+    padding: 150px 0;
+}
+
+.model {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.model img {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.flex{
+    display: flex;
+
+}
+
+@font-face {
+    font-family: '站酷快乐体';
+    src: url('fonts/站酷快乐体.ttf');
+}
+
+.footer {
+    color: white;
+    font-family: '站酷快乐体', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+

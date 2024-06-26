@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/record.css" />
+    <title>“小南”的睡前养生日志</title>
+</head>
+
+<body>
+    <div class="ribbon">
+        <a href='./index.html'><span>睡眠健康状况前言速览</span></a>
+        <a href='./log.html'><span>“小南”的睡前养生日志</span></a>
+        <a href='./record.html' class="active"><span>“小南”的夜间睡眠记录</span></a>
+        <a href='./way.html'><span>“小南”的睡醒补救方式</span></a>
+        <a href='./summary.html'><span>小结</span></a>
+    </div>
+    <div class="main w">
+        <div class="card">
+            <h1>⼩南⼊睡了。睡得⾹吗？</h1>
+            <h3>拖拖拉拉洗完澡后，时钟已然⾛到01:24。 <br>
+            </h3>
+            <p>（请点击三张图⽚）</p>
+        </div>
+        <div class="model">
+            <a href="#">
+                <img src="./img/record/3-2.gif" alt="">
+            </a>
+            <a href="#">
+                <img src="./img/record/3-1.gif" alt="">
+            </a>
+            <a href="#">
+                <img src="./img/record/3-3.gif" alt="">
+            </a>
+        </div>
+        <div class="model2">
+
+        </div>
+        <div class="model3">
+            <div class="card" style="margin-right: 30px;">
+                2023年，与全球平均值变化相反，我国年轻群体睡眠趋势时⻓呈缩短态势。在我国不同年龄段分布上，整体⽔平在6⼩时40分钟左右，呈现轻微正态分布，其中19-25岁年龄段平均睡眠时⻓最⻓为6⼩时46分钟，但这与2022年年轻群体睡眠时⻓7⼩时相⽐，时⻓缩短变化趋势值得警惕。70前及70后的已退休⼈员常被易醒/早睡、夜间如厕困扰，00后和90后的年轻⼈则困扰于⼊睡困难。随着年龄增⻓，容易受咳嗽/打鼾、易醒/早睡、夜间如厕影响⽽睡不好觉。
+            </div>
+            <img src="./img/record/3-4.gif" alt="">
+        </div>
+        <div class="model3">
+            <img src="./img/record/3-5.png" alt="">
+            <div class="card" style="margin-left: 30px;">
+                2023年，与全球平均值变化相反，我国年轻群体睡眠趋势时⻓呈缩短态势。在我国不同年龄段分布上，整体⽔平在6⼩时40分钟左右，呈现轻微正态分布，其中19-25岁年龄段平均睡眠时⻓最⻓为6⼩时46分钟，但这与2022年年轻群体睡眠时⻓7⼩时相⽐，时⻓缩短变化趋势值得警惕。70前及70后的已退休⼈员常被易醒/早睡、夜间如厕困扰，00后和90后的年轻⼈则困扰于⼊睡困难。随着年龄增⻓，容易受咳嗽/打鼾、易醒/早睡、夜间如厕影响⽽睡不好觉。
+            </div>
+        </div>
+        <div class="model3">
+            <div class="card">
+                2023年，与全球平均值变化相反，我国年轻群体睡眠趋势时⻓呈缩短态势。在我国不同年龄段分布上，整体⽔平在6⼩时40分钟左右，呈现轻微正态分布，其中19-25岁年龄段平均睡眠时⻓最⻓为6⼩时46分钟，但这与2022年年轻群体睡眠时⻓7⼩时相⽐，时⻓缩短变化趋势值得警惕。70前及70后的已退休⼈员常被易醒/早睡、夜间如厕困扰，00后和90后的年轻⼈则困扰于⼊睡困难。随着年龄增⻓，容易受咳嗽/打鼾、易醒/早睡、夜间如厕影响⽽睡不好觉。
+            </div>
+            <img src="./img/record/3-6.jpg" alt="" style="margin: 0 30px;">
+            <img src="./img/record/3-7.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        let texts = [
+            '我吃下褪⿊素，点上⼀⽀茉莉花⾹的睡眠⾹氛，迅速翻⾝上床。',
+            '美美玩会⼉⼿机，批阅今天⼤事',
+            '躺在床上数⽺的时候，突然想起前天同事推荐的睡眠app，好像还能听到⾃⼰的梦话，听着像是个有趣app。我不禁拿起⼿机下载app，设置完⽩名单后，退出了app。睡眠App附近的b站似乎在引诱我，⻤使神差我就点开了b站，⾸⻚算法捕捉到了我下载睡眠app的⾏为，开始给我推荐睡眠⽩噪⾳、asmr视频。点进去⼀看，主播正⽤化妆刷轻声摩擦收⾳⻨克⻛，轻柔的声响钻进我⽿朵，在绵绵的声⾳和褪⿊素的双重作⽤下，睡意逐渐袭来…',
+        ]
+        let links = document.querySelectorAll('.model a')
+
+        links.forEach((item, index) => item.addEventListener('click', () => {
+            if (document.querySelector('.model2').innerHTML == texts[index] && document.querySelector('.model2').className.includes('active')) {
+                return document.querySelector('.model2').classList.remove('active')
+            }
+            document.querySelector('.model2').innerHTML = texts[index]
+            document.querySelector('.model2').classList.add('active')
+        }))
+    </script>
+</body>
+
+</html>
